@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="form.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <div class="skewed"></div>
+      </section>
+    <section class="registry-section">
+        <div class="form-container">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button class="toggle-btn" type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+           
+
+            <form id="login" class="form user-form">
+                <div class="welcome">
+                    <h1>¡Bienvenido de vuelta!</h1>
+                    <p>Entra a tu cuenta</p>
+                </div>
+
+                <div class="form-box">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <small class="error-text">Introduce un email valido</small>
+                </div>
+
+                <div class="form-box">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <small class="error-text">Introduce una contraseña de +6 caracteres</small>
+                </div>
+
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+
+            </form>
+            
+            <form id="register" class="form user-form">
+
+
+                <div class="welcome">
+                    <h1>Regístrate</h1>
+                    <p>Entra a tu cuenta</p>
+                </div>
+
+                <div class="form-box">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <small class="error-text">Introduce un email valido</small>
+                </div>
+
+                <div class="form-box">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <small class="error-text">Introduce una contraseña de +6 caracteres</small>
+                </div>
+
+                <div class="form-box">
+                    <input type="password" name="password" id="password2" placeholder="Confirmar Contraseña">
+                    <small class="error-text">Introduce una contraseña de +6 caracteres</small>
+                </div>
+
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+
+            </form>
+        </div>
+    </section>
+
+    
+    
+</body>
+
+</html>
